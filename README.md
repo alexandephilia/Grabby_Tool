@@ -18,7 +18,7 @@ Current logic dictates: **Eyes see the mess → Brain plans the slaughter → Ha
 Inject Grabby into any project in approximately 5 seconds. Run this in your project root, retard:
 
 ```bash
-curl -s https://alexandeism.com/grabby | bash
+curl -s https://raw.githubusercontent.com/alexandephilia/Grabby_Tool/main/grabby | bash
 ```
 
 **What this does to your project:**
