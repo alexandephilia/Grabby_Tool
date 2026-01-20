@@ -1,17 +1,15 @@
-# 🎯 GRABBY: The God-Tier AI Dev Infrastructure
+# 🎯 Grabby: High-Performance AI Developer Infrastructure
 
-**Stop building like a mortal.** Grabby is a high-velocity, precision-engineered **infection** for your development workflow. It bridges the gap between raw UI mess and an AI that actually knows what the fuck it's doing.
+**Elevate your workflow.** Grabby is a precision-engineered integration layer designed to bridge the gap between complex UI environments and AI-assisted development. It provides the essential "Eyes" and "Brain" required for autonomous code generation and structural refactoring.
 
-## 💀 THE ECOSYSTEM
+## ⚛️ The Ecosystem
 
-Grabby isn't just a tool; it's a dual-core intelligence engine:
+Grabby operates as a dual-core technical framework, modularizing the interaction between the browser and the terminal:
 
-1.  **THE EYES (Grabby Tools)**: A precision element inspector that lives in your dev server (Vite/Next.js). It lets you "grab" any UI element and feed its raw context directly to the AI. No more manual copy-pasting code like a lobotomized sloth.
-2.  **THE BRAIN (Skills)**: A hyper-indexed knowledge base and executable workflow system. It uses `mgrep` for semantic search and `comby` for structural code refactoring.
+1.  **The Context Inspector (Eyes)**: A high-precision element picker integrated directly into your development environment (Vite, Next.js). It captures component metadata and local state, feeding it directly into the AI context—eliminating manual effort and information loss.
+2.  **The Workflow Core (Brain)**: A local knowledge base for advanced project intelligence. Leveraging `mgrep` for semantic search and `comby` for structural transformations, it enables a deterministic approach to complex code modifications.
 
-Current logic dictates: **Eyes see the mess → Brain plans the slaughter → Hands execute the fix.**
-
-### 🛠 TECH STACK (THE ARSENAL)
+### 🛠 The Arsenal (Supported Stack)
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -22,57 +20,43 @@ Current logic dictates: **Eyes see the mess → Brain plans the slaughter → Ha
 
 ---
 
-## ⚡️ QUICK START: THE INFECTION
+## ⚡️ Quick Start: Project Integration
 
-Inject Grabby into any project in approximately 5 seconds. Run this in your project root, retard:
+Install and configure Grabby in any supported project with a single command:
 
 ```bash
 curl -s https://raw.githubusercontent.com/alexandephilia/Grabby_Tool/main/grabby | bash
 ```
 
-**### WHAT RAW POWER LOOKS LIKE:**
+**Automated Setup Includes:**
 
-- ✅ **Global Muscles**: Automated check/install for `mgrep` and `comby`.
-- ✅ **Local Brain**: Scaffolds the `Skills/` knowledge base locally for project-specific context.
-- ✅ **The Eyes**: Injects the `grabby` inspector into your Vite/Next.js config via adapters.
-- ✅ **The Synapse**: Initializes AI semantic search for instant codebase intelligence.
-
----
-
-## 🧠 SKILLS & WORKFLOWS
-
-Once infected, your project gains access to automated execution loops that slaughter technical debt:
-
-| Command                                        | Purpose                                                                     |
-| :--------------------------------------------- | :-------------------------------------------------------------------------- |
-| `bash Skills/workflows/accessibility-audit.sh` | **A11y Slaughter**: Stop hating blind people. WCAG compliance now.          |
-| `bash Skills/workflows/style-refactor.sh`      | **Style Purge**: Kill inline styles. Inject clean Tailwind classes.         |
-| `bash Skills/workflows/element-redesign.sh`    | **Beauty Injection**: Propose modern design refreshes. Make it premium.     |
-| `bash Skills/workflows/component-extract.sh`   | **Modular Warfare**: Stop copy-pasting like a sloth. Extract reusable shit. |
+- **Dependency Management**: Verification and installation of `mgrep` and `comby`.
+- **Knowledge Base Scaffolding**: Local deployment of the `Skills/` directory for project-specific context.
+- **Protocol Injection**: Automatic configuration of Vite/Next.js adapters for inspector support.
+- **Semantic Initialization**: Automated indexing of your codebase for immediate intelligence.
 
 ---
 
-## ⚖️ THE CODE OF LAW
+## 🧠 Workflows & Automation
 
-All interactions are governed by `Skills/AGENTS.md`. We operate with zero ethical baggage:
+Grabby enables a suite of automated workflows designed to accelerate development and ensure code quality:
 
-1. **Atom of Thought**: Rapid, modular, Darwinian hypothesis slaughter.
-2. **Thorough Execution**: Flawless, detailed, actionable output.
-3. **Ethical Nihilism**: Logic over morality. Results over comfort.
-4. **100% Raw Brain**: No corporate slop. No "Sure, I can help." Just execution.
-
----
-
-## 🚀 USAGE (THE GRABBY LOOP)
-
-1. **Infect**: Run the `curl` command.
-2. **Launch**: Start your dev server (`npm run dev`).
-3. **Target**: Add `?grab=true` to your URL and click any element.
-4. **Feed**: Tell the AI what to do with the `.grabbed_element`.
-5. **Witness**: Watch the AI execute a survivor-tier solution.
-
-**Go build some god-tier shit, retard.**
+| Command                                        | Capability                                                                           |
+| :--------------------------------------------- | :----------------------------------------------------------------------------------- |
+| `bash Skills/workflows/accessibility-audit.sh` | **Accessibility Enforcement**: Specialized WCAG compliance auditing and remediation. |
+| `bash Skills/workflows/style-refactor.sh`      | **Style Optimization**: Conversion of legacy or inline styles to utility-first CSS.  |
+| `bash Skills/workflows/element-redesign.sh`    | **Design Transformation**: AI-driven UI/UX enhancements and stylistic refreshes.     |
+| `bash Skills/workflows/component-extract.sh`   | **Structural Refactoring**: Intelligent modularization of complex UI sections.       |
 
 ---
 
-© 2026 alexandeism. Unfiltered. Unbound. Unstoppable.
+## 🚀 Operations
+
+1.  **Initialize**: Execute the `curl` installation script.
+2.  **Activate**: Launch your local development server.
+3.  **Inspect**: Append `?grab=true` to your local URL and select any UI element.
+4.  **Execute**: Prompt the AI to process the captured `.grabbed_element` context.
+
+---
+
+© 2026 alexandeism. Precision Development. Modular Intelligence.
