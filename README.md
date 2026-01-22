@@ -1,6 +1,11 @@
 # Grabby: AI-Powered Frontend Development Infrastructure
 
+[![npm version](https://img.shields.io/npm/v/grabby-cli.svg)](https://www.npmjs.com/package/grabby-cli)
+[![npm downloads](https://img.shields.io/npm/dm/grabby-cli.svg)](https://www.npmjs.com/package/grabby-cli)
+
 **Elevate your workflow.** Grabby is a precision-engineered AI knowledge system that combines element inspection, semantic search, and automated workflows to enable autonomous code generation and structural refactoring.
+
+**npm:** https://www.npmjs.com/package/grabby-cli
 
 ## The Architecture
 
