@@ -1,9 +1,10 @@
 {
   "name": "grabby-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Precision element inspector and AI infrastructure for Devs.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "readme": "README.md",
   "bin": {
     "grabby": "./bin/cli.js"
   },
