@@ -770,6 +770,44 @@ Before creating a `useEffect`, verify:
 3. Can this value be derived during render?
 4. Is there a React-native alternative?
 
+Before writing useEffect, ask yourself ONE question:
+"Is this syncing with an EXTERNAL system?"
+
+✅ If YES → useEffect is fine
+❌ If NO → You probably don't need it
+
+Here are the better alternatives:
+
+📊 Transforming data?
+→ Calculate during render (or use useMemo)
+
+🖱️ Handling user events?
+→ Use event handlers, not effects
+
+⚡ Expensive calculation?
+→ useMemo (not useEffect + setState)
+
+🔄 Resetting state on prop change?
+→ Use the `key` prop
+
+📡 Subscribing to external store?
+→ useSyncExternalStore
+
+The biggest mistake: Using useEffect to filter data or handle clicks. If you're doing this, there's a better way.
+
+Common anti-patterns to avoid:
+
+- useEffect + setState from props/state (causes extra re-renders)
+- useEffect for click/submit handlers (loses event context)
+- useEffect to notify parent components (breaks unidirectional data flow)
+
+When useEffect IS appropriate:
+
+- WebSocket connections
+- Third-party widget integration
+- Measuring DOM elements after render
+- Browser API subscriptions with cleanup
+
 ### The Bottom Line
 
 **When To Use useEffect:**

@@ -22,8 +22,16 @@
         "ai-tools",
         "dev-tools"
     ],
-    "author": "",
+    "author": "alexandephilia",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexandephilia/Grabby_Tool.git"
+    },
+    "bugs": {
+        "url": "https://github.com/alexandephilia/Grabby_Tool/issues"
+    },
+    "homepage": "https://github.com/alexandephilia/Grabby_Tool#readme",
     "peerDependencies": {
         "vite": ">=4.0.0",
         "next": ">=13.0.0"
