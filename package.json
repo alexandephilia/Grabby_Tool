@@ -16,8 +16,7 @@
     "Skills"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "inspector",
