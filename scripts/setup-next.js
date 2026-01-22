@@ -24,7 +24,7 @@ if (isAppRouter) {
     }
 
     if (!fs.existsSync(routeFile)) {
-        fs.writeFileSync(routeFile, `import { createGrabbyAppHandler } from '@grabby/inspector/adapters/next';
+        fs.writeFileSync(routeFile, `import { createGrabbyAppHandler } from '@grabby/cli/adapters/next';
 
 export const POST = createGrabbyAppHandler();
 `);
@@ -41,7 +41,7 @@ export const POST = createGrabbyAppHandler();
     }
 
     if (!fs.existsSync(routeFile)) {
-        fs.writeFileSync(routeFile, `import { createGrabbyHandler } from '@grabby/inspector/adapters/next';
+        fs.writeFileSync(routeFile, `import { createGrabbyHandler } from '@grabby/cli/adapters/next';
 
 export default createGrabbyHandler();
 `);
@@ -64,7 +64,7 @@ if (fs.existsSync(clientSource)) {
     fs.copyFileSync(clientSource, clientDest);
     console.log('✅ Copied client script to public/grabby-client.js');
 } else {
-    console.log('⚠️  Could not find client script. Please copy manually from node_modules/@grabby/inspector/client/grabby.js');
+    console.log('⚠️  Could not find client script. Please copy manually from node_modules/@grabby/cli/client/grabby.js');
 }
 
 // 3. Instructions for adding script

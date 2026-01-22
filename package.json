@@ -1,22 +1,19 @@
 {
-    "name": "@grabby/inspector",
-    "version": "1.0.0",
-    "description": "Precision element inspector for AI-assisted development. Works with Vite and Next.js.",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist",
-        "client",
-        "adapters",
-        "scripts"
-    ],
-    "scripts": {
-        "setup:vite": "node scripts/setup-vite.js",
-        "setup:next": "node scripts/setup-next.js"
-    },
-    "bin": {
-        "grabby": "./grabby"
-    },
+  "name": "@grabby/cli",
+  "version": "1.0.0",
+  "description": "Precision element inspector and AI infrastructure for Devs.",
+  "main": "dist/index.js",
+  "bin": {
+    "grabby": "./bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "client",
+    "adapters",
+    "scripts",
+    "bin",
+    "Skills"
+  ],
     "keywords": [
         "inspector",
         "element-picker",

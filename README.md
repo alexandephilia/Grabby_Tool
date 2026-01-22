@@ -25,7 +25,7 @@ Grabby operates as a dual-core technical framework, modularizing the interaction
 Install and configure Grabby in any supported project with a single command:
 
 ```bash
-curl -s https://raw.githubusercontent.com/alexandephilia/Grabby_Tool/main/grabby | bash
+npx @grabby/cli init
 ```
 
 **Automated Setup Includes:**
@@ -52,7 +52,7 @@ Grabby enables a suite of automated workflows designed to accelerate development
 
 ## 🚀 Operations
 
-1.  **Initialize**: Execute the `curl` installation script.
+1.  **Initialize**: Execute the `npx @grabby/cli init` command.
 2.  **Activate**: Launch your local development server.
 3.  **Inspect**: Append `?grab=true` to your local URL and select any UI element.
 4.  **Execute**: Prompt the AI to process the captured `.grabbed_element` context.

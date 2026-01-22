@@ -14,7 +14,7 @@ if (fs.existsSync(VITE_CONFIG)) {
 
     // Add import if missing
     if (!content.includes('grabbySyncPlugin')) {
-        content = "import { grabbySyncPlugin } from '@grabby/inspector/adapters/vite';\n" + content;
+        content = "import { grabbySyncPlugin } from '@grabby/cli/adapters/vite';\n" + content;
         console.log('✅ Added import to vite.config.ts');
     }
 
@@ -40,7 +40,7 @@ if (fs.existsSync(VITE_CONFIG)) {
 } else {
     console.log('⚠️  vite.config.ts not found. Please add manually:');
     console.log(`
-import { grabbySyncPlugin } from '@grabby/inspector/adapters/vite';
+import { grabbySyncPlugin } from '@grabby/cli/adapters/vite';
 
 export default defineConfig({
   server: {
@@ -58,7 +58,7 @@ if (fs.existsSync(INDEX_HTML)) {
     let content = fs.readFileSync(INDEX_HTML, 'utf8');
 
     if (!content.includes('grabby.js')) {
-        const scriptTag = '\n    <script src="./node_modules/@grabby/inspector/client/grabby.js"></script>\n  </head>';
+        const scriptTag = '\n    <script src="./node_modules/@grabby/cli/client/grabby.js"></script>\n  </head>';
         content = content.replace('</head>', scriptTag);
         fs.writeFileSync(INDEX_HTML, content);
         console.log('✅ Added script to index.html');
@@ -67,7 +67,7 @@ if (fs.existsSync(INDEX_HTML)) {
     }
 } else {
     console.log('⚠️  index.html not found. Please add manually:');
-    console.log('<script src="./node_modules/@grabby/inspector/client/grabby.js"></script>');
+    console.log('<script src="./node_modules/@grabby/cli/client/grabby.js"></script>');
 }
 
 // 3. Create placeholder .grabbed_element
