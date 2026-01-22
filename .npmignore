@@ -11,3 +11,6 @@ READY_TO_PUSH.md
 tsconfig.json
 *.ts
 !*.d.ts
+
+# Explicitly include README
+!README.md
