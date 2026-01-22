@@ -1,13 +1,26 @@
-# 🎯 Grabby: High-Performance AI Developer Infrastructure
+# 🎯 Grabby: AI-Powered Frontend Development Infrastructure
 
-**Elevate your workflow.** Grabby is a precision-engineered integration layer designed to bridge the gap between complex UI environments and AI-assisted development. It provides the essential "Eyes" and "Brain" required for autonomous code generation and structural refactoring.
+**Elevate your workflow.** Grabby is a precision-engineered AI knowledge system that combines element inspection, semantic search, and automated workflows to enable autonomous code generation and structural refactoring.
 
-## ⚛️ The Ecosystem
+## ⚛️ The Architecture
 
-Grabby operates as a dual-core technical framework, modularizing the interaction between the browser and the terminal:
+Grabby operates as a three-layer system:
 
-1.  **The Context Inspector (Eyes)**: A high-precision element picker integrated directly into your development environment (Vite, Next.js). It captures component metadata and local state, feeding it directly into the AI context—eliminating manual effort and information loss.
-2.  **The Workflow Core (Brain)**: A local knowledge base for advanced project intelligence. Leveraging `mgrep` for semantic search and `comby` for structural transformations, it enables a deterministic approach to complex code modifications.
+1.  **The Context Inspector (Eyes)**: High-precision element picker integrated into your dev environment (Vite, Next.js). Captures component metadata, styles, and context—feeding it directly to AI agents.
+
+2.  **The Knowledge Base (Brain)**: 980KB of curated AI skills including:
+    - **52 Jotai state management docs** (complete library knowledge)
+    - **Frontend design patterns** (aesthetics, React rules, typography)
+    - **Motion animation library** (comprehensive Motion.dev docs)
+    - **Tailwind CSS reference** (utility-first styling)
+    - **Codebase analysis tools** (project structure detection)
+
+3.  **The Workflow Engine (Hands)**: Executable bash scripts that query the knowledge base via semantic search (`mgrep`) and perform automated actions:
+    - Accessibility audits (WCAG compliance)
+    - Component extraction (modularization)
+    - Style refactoring (Tailwind conversion)
+    - Design transformation (UI/UX improvements)
+    - Code refactoring (AST-based with `comby`)
 
 ### 🛠 The Arsenal (Supported Stack)
 
@@ -20,42 +33,201 @@ Grabby operates as a dual-core technical framework, modularizing the interaction
 
 ---
 
-## ⚡️ Quick Start: Project Integration
+## ⚡️ Installation
 
-Install and configure Grabby in any supported project with a single command:
+### Install from GitHub (Current Method)
+
+Since Grabby isn't published to npm yet, install directly from GitHub:
 
 ```bash
-npx @grabby/cli init
+npm install -g git+https://github.com/alexandephilia/Grabby_Tool.git
 ```
 
-**Automated Setup Includes:**
+Then initialize in your project:
 
-- **Dependency Management**: Verification and installation of `mgrep` and `comby`.
-- **Knowledge Base Scaffolding**: Local deployment of the `Skills/` directory for project-specific context.
-- **Protocol Injection**: Automatic configuration of Vite/Next.js adapters for inspector support.
-- **Semantic Initialization**: Automated indexing of your codebase for immediate intelligence.
+```bash
+cd your-project
+grabby init
+```
+
+**What Gets Installed:**
+
+- ✓ **Skills/ folder** (980KB AI knowledge base) copied to your project
+- ✓ **mgrep** (semantic search engine) installed globally
+- ✓ **comby** (structural code transformation) installed via Homebrew
+- ✓ **Framework adapters** (Vite plugin or Next.js handlers) configured automatically
+- ✓ **Semantic indexing** initialized for instant AI knowledge retrieval
+
+### Alternative: Local Development
+
+```bash
+git clone https://github.com/alexandephilia/Grabby_Tool.git
+cd Grabby_Tool
+npm install
+npm run build
+npm link
+grabby init
+```
 
 ---
 
-## 🧠 Workflows & Automation
+## 🧠 The Skills System
 
-Grabby enables a suite of automated workflows designed to accelerate development and ensure code quality:
+After running `grabby init`, your project gains access to the complete AI knowledge infrastructure:
+
+```
+Skills/
+├── AGENTS.md (52KB)
+│   └── AI operational framework (atomic thinking, ethical nihilism)
+│
+├── skills/ (Knowledge Base)
+│   ├── frontend-design/
+│   │   └── Design patterns, React rules, typography, aesthetics
+│   ├── motion-dev/
+│   │   └── Motion animation library comprehensive docs
+│   ├── jotai/ (52 files!)
+│   │   └── Complete state management knowledge
+│   ├── tailwind-css/
+│   │   └── CSS framework reference
+│   └── codebase-context/
+│       └── Project analysis and structure detection
+│
+└── workflows/ (Executable Scripts)
+    ├── query-skill.sh → Semantic search via mgrep
+    ├── accessibility-audit.sh → WCAG compliance checking
+    ├── component-extract.sh → Component modularization
+    ├── element-redesign.sh → Design transformation
+    ├── style-refactor.sh → Tailwind conversion
+    └── codemod-refactor.sh → AST-based code refactoring
+```
+
+### Automated Workflows
 
 | Command                                        | Capability                                                                           |
 | :--------------------------------------------- | :----------------------------------------------------------------------------------- |
-| `bash Skills/workflows/accessibility-audit.sh` | **Accessibility Enforcement**: Specialized WCAG compliance auditing and remediation. |
-| `bash Skills/workflows/style-refactor.sh`      | **Style Optimization**: Conversion of legacy or inline styles to utility-first CSS.  |
-| `bash Skills/workflows/element-redesign.sh`    | **Design Transformation**: AI-driven UI/UX enhancements and stylistic refreshes.     |
-| `bash Skills/workflows/component-extract.sh`   | **Structural Refactoring**: Intelligent modularization of complex UI sections.       |
+| `bash Skills/workflows/accessibility-audit.sh` | **Accessibility Enforcement**: WCAG compliance auditing with actionable fixes        |
+| `bash Skills/workflows/style-refactor.sh`      | **Style Optimization**: Convert inline styles to Tailwind utility classes           |
+| `bash Skills/workflows/element-redesign.sh`    | **Design Transformation**: AI-driven UI/UX improvements using design knowledge       |
+| `bash Skills/workflows/component-extract.sh`   | **Structural Refactoring**: Extract reusable components with proper patterns         |
+| `bash Skills/workflows/query-skill.sh`         | **Knowledge Retrieval**: Semantic search across 980KB of curated AI knowledge        |
+| `bash Skills/workflows/codemod-refactor.sh`    | **Code Transformation**: AST-based refactoring with Codemod CLI                      |
 
 ---
 
-## 🚀 Operations
+## 🚀 Usage
 
-1.  **Initialize**: Execute the `npx @grabby/cli init` command.
-2.  **Activate**: Launch your local development server.
-3.  **Inspect**: Append `?grab=true` to your local URL and select any UI element.
-4.  **Execute**: Prompt the AI to process the captured `.grabbed_element` context.
+### Basic Workflow
+
+1.  **Initialize**: Run `grabby init` in your project
+2.  **Activate**: Start your dev server (`npm run dev`)
+3.  **Inspect**: Add `?grab=true` to your URL
+4.  **Capture**: Hold Cmd/Ctrl and click any UI element
+5.  **Execute**: AI automatically processes `.grabbed_element` and runs workflows
+
+### AI Workflow Example
+
+```bash
+# User clicks a button element
+# → .grabbed_element created with element data
+
+# AI detects intent: "make this more accessible"
+bash Skills/workflows/accessibility-audit.sh
+
+# AI reads generated recommendations
+cat .workflow_output/accessibility-audit.md
+
+# AI applies WCAG fixes automatically using Skills/ knowledge
+```
+
+### Semantic Knowledge Retrieval
+
+```bash
+# AI needs design pattern knowledge
+bash Skills/workflows/query-skill.sh "React useEffect alternatives"
+
+# mgrep searches Skills/ semantically
+# Returns ranked results from 52 Jotai docs, design patterns, etc.
+
+# AI applies knowledge to current task
+```
+
+### Manual Workflow Execution
+
+```bash
+# Check accessibility of grabbed element
+bash Skills/workflows/accessibility-audit.sh
+
+# Convert inline styles to Tailwind
+bash Skills/workflows/style-refactor.sh
+
+# Get design improvement proposals
+bash Skills/workflows/element-redesign.sh
+
+# Extract component from grabbed element
+bash Skills/workflows/component-extract.sh
+```
+
+## 🔧 Framework Integration
+
+### Vite
+
+```typescript
+// vite.config.ts
+import { grabbySyncPlugin } from '@grabby/cli'
+
+export default {
+  plugins: [grabbySyncPlugin()]
+}
+```
+
+### Next.js (Pages Router)
+
+```typescript
+// pages/api/grabby-sync.ts
+import { createGrabbyHandler } from '@grabby/cli'
+export default createGrabbyHandler()
+```
+
+### Next.js (App Router)
+
+```typescript
+// app/api/grabby-sync/route.ts
+import { createGrabbyAppHandler } from '@grabby/cli'
+export const POST = createGrabbyAppHandler()
+```
+
+## 📊 System Requirements
+
+- **Node.js** 16+ (for npm/npx)
+- **Homebrew** (optional, for comby installation)
+- **mgrep** (installed automatically via npm)
+- **comby** (installed automatically via Homebrew)
+- **Supported Frameworks**: Vite 4+, Next.js 13+
+
+## 🎯 Key Features
+
+- **Zero Configuration**: Automatic framework detection and setup
+- **Portable Knowledge**: Skills/ folder works in any project
+- **Semantic Search**: mgrep-powered AI knowledge retrieval
+- **AST-Based Refactoring**: Precise code transformations with comby
+- **Visual Element Picker**: Browser-integrated inspector
+- **Automated Workflows**: Bash scripts for common AI tasks
+- **Type-Safe**: Full TypeScript support with .d.ts files
+
+## 📚 Documentation
+
+- **[INSTALL.md](./INSTALL.md)** - Detailed installation guide
+- **[USAGE.md](./USAGE.md)** - Comprehensive usage documentation
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture deep dive
+- **[Skills/AGENTS.md](./Skills/AGENTS.md)** - AI operational framework
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines.
+
+## 📄 License
+
+MIT License - see [LICENSE](./LICENSE) for details.
 
 ---
 

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Precision element inspector and AI infrastructure for Devs.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "grabby": "./bin/cli.js"
   },
@@ -14,34 +15,42 @@
     "bin",
     "Skills"
   ],
-    "keywords": [
-        "inspector",
-        "element-picker",
-        "vite",
-        "nextjs",
-        "ai-tools",
-        "dev-tools"
-    ],
-    "author": "alexandephilia",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alexandephilia/Grabby_Tool.git"
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "inspector",
+    "element-picker",
+    "vite",
+    "nextjs",
+    "ai-tools",
+    "dev-tools"
+  ],
+  "author": "alexandephilia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandephilia/Grabby_Tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandephilia/Grabby_Tool/issues"
+  },
+  "homepage": "https://github.com/alexandephilia/Grabby_Tool#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "vite": ">=4.0.0",
+    "next": ">=13.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
     },
-    "bugs": {
-        "url": "https://github.com/alexandephilia/Grabby_Tool/issues"
-    },
-    "homepage": "https://github.com/alexandephilia/Grabby_Tool#readme",
-    "peerDependencies": {
-        "vite": ">=4.0.0",
-        "next": ">=13.0.0"
-    },
-    "peerDependenciesMeta": {
-        "vite": {
-            "optional": true
-        },
-        "next": {
-            "optional": true
-        }
+    "next": {
+      "optional": true
     }
+  }
 }

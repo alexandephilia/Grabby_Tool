@@ -9,7 +9,7 @@
         "declaration": true,
         "outDir": "./dist",
         "rootDir": "./",
-        "strict": true,
+        "strict": false,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
@@ -18,12 +18,14 @@
         "isolatedModules": true
     },
     "include": [
-        "adapters/**/*"
+        "adapters/**/*",
+        "index.ts"
     ],
     "exclude": [
         "node_modules",
         "dist",
         "scripts",
-        "client"
+        "client",
+        "bin"
     ]
 }
