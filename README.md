@@ -1,8 +1,8 @@
-# 🎯 Grabby: AI-Powered Frontend Development Infrastructure
+# Grabby: AI-Powered Frontend Development Infrastructure
 
 **Elevate your workflow.** Grabby is a precision-engineered AI knowledge system that combines element inspection, semantic search, and automated workflows to enable autonomous code generation and structural refactoring.
 
-## ⚛️ The Architecture
+## The Architecture
 
 Grabby operates as a three-layer system:
 
@@ -22,7 +22,7 @@ Grabby operates as a three-layer system:
     - Design transformation (UI/UX improvements)
     - Code refactoring (AST-based with `comby`)
 
-### 🛠 The Arsenal (Supported Stack)
+### The Arsenal (Supported Stack)
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -33,7 +33,7 @@ Grabby operates as a three-layer system:
 
 ---
 
-## ⚡️ Installation
+## Installation
 
 ### Install via npx (Recommended)
 
@@ -70,7 +70,7 @@ grabby init
 
 ---
 
-## 🧠 The Skills System
+## The Skills System
 
 After running `grabby init`, your project gains access to the complete AI knowledge infrastructure:
 
@@ -113,7 +113,7 @@ Skills/
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Basic Workflow
 
@@ -166,7 +166,7 @@ bash Skills/workflows/element-redesign.sh
 bash Skills/workflows/component-extract.sh
 ```
 
-## 🔧 Framework Integration
+## Framework Integration
 
 ### Vite
 
@@ -195,7 +195,7 @@ import { createGrabbyAppHandler } from '@grabby/cli'
 export const POST = createGrabbyAppHandler()
 ```
 
-## 📊 System Requirements
+## System Requirements
 
 - **Node.js** 16+ (for npm/npx)
 - **Homebrew** (optional, for comby installation)
@@ -203,7 +203,7 @@ export const POST = createGrabbyAppHandler()
 - **comby** (installed automatically via Homebrew)
 - **Supported Frameworks**: Vite 4+, Next.js 13+
 
-## 🎯 Key Features
+## Key Features
 
 - **Zero Configuration**: Automatic framework detection and setup
 - **Portable Knowledge**: Skills/ folder works in any project
@@ -213,18 +213,18 @@ export const POST = createGrabbyAppHandler()
 - **Automated Workflows**: Bash scripts for common AI tasks
 - **Type-Safe**: Full TypeScript support with .d.ts files
 
-## 📚 Documentation
+## Documentation
 
 - **[INSTALL.md](./INSTALL.md)** - Detailed installation guide
 - **[USAGE.md](./USAGE.md)** - Comprehensive usage documentation
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture deep dive
 - **[Skills/AGENTS.md](./Skills/AGENTS.md)** - AI operational framework
 
-## 🤝 Contributing
+## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines.
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](./LICENSE) for details.
 
