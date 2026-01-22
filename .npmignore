@@ -1,0 +1,13 @@
+# Only ignore these (everything else gets included)
+node_modules/
+.DS_Store
+*.log
+.grabbed_element
+.workflow_output/
+.git/
+.gitattributes
+COMMIT_MESSAGE.txt
+READY_TO_PUSH.md
+tsconfig.json
+*.ts
+!*.d.ts
