@@ -1,5 +1,5 @@
 {
-  "name": "@grabby/cli",
+  "name": "grabby-cli",
   "version": "1.0.0",
   "description": "Precision element inspector and AI infrastructure for Devs.",
   "main": "dist/index.js",

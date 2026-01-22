@@ -35,28 +35,27 @@ Grabby operates as a three-layer system:
 
 ## ⚡️ Installation
 
-### Install from GitHub (Current Method)
+### Install via npx (Recommended)
 
-Since Grabby isn't published to npm yet, install directly from GitHub:
+The easiest way to use Grabby:
 
 ```bash
-npm install -g git+https://github.com/alexandephilia/Grabby_Tool.git
+npx grabby-cli init
 ```
 
-Then initialize in your project:
+This will:
+- ✓ Copy **Skills/ folder** (980KB AI knowledge base) to your project
+- ✓ Install **mgrep** (semantic search engine) globally if needed
+- ✓ Install **comby** (structural code transformation) via Homebrew if needed
+- ✓ Configure **framework adapters** (Vite plugin or Next.js handlers) automatically
+- ✓ Initialize **semantic indexing** for instant AI knowledge retrieval
+
+### Alternative: Global Install
 
 ```bash
-cd your-project
+npm install -g grabby-cli
 grabby init
 ```
-
-**What Gets Installed:**
-
-- ✓ **Skills/ folder** (980KB AI knowledge base) copied to your project
-- ✓ **mgrep** (semantic search engine) installed globally
-- ✓ **comby** (structural code transformation) installed via Homebrew
-- ✓ **Framework adapters** (Vite plugin or Next.js handlers) configured automatically
-- ✓ **Semantic indexing** initialized for instant AI knowledge retrieval
 
 ### Alternative: Local Development
 
