@@ -18,9 +18,36 @@ When you run `grabby init`, it **injects this entire AI brain into your project*
 
 ---
 
-## Install from GitHub (Recommended for now)
+## Quick Start (Recommended)
 
-Since this package isn't published to npm yet, install directly from the GitHub repo:
+The easiest way to use Grabby:
+
+```bash
+npx grabby-cli init
+```
+
+That's it! This single command will set up everything you need.
+
+### What Gets Installed:
+
+- ✓ **Skills/ folder** (980KB AI knowledge base) copied to your project
+- ✓ **mgrep** (semantic search engine) installed globally if needed
+- ✓ **comby** (structural code transformation) installed via Homebrew if needed
+- ✓ **Framework adapters** (Vite plugin or Next.js handlers) configured automatically
+- ✓ **Semantic indexing** initialized for instant AI knowledge retrieval
+
+---
+
+## Alternative: Global Install
+
+```bash
+npm install -g grabby-cli
+grabby init
+```
+
+---
+
+## Alternative: Install from GitHub
 
 ```bash
 npm install -g git+https://github.com/alexandephilia/Grabby_Tool.git
