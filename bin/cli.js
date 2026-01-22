@@ -55,11 +55,29 @@ function ask(question) {
 
     const prompt = `\n${COLORS.fgYellow}${ICONS.info} ${COLORS.bright}${question}${COLORS.reset} ${COLORS.dim}(y/n)${COLORS.reset}: `;
     
-    rl.question(prompt, (answer) => {
-      rl.close();
-      const trimmed = answer.trim().toLowerCase();
-      resolve(trimmed === "y" || trimmed === "yes" || trimmed === "");
-    });
+    const askQuestion = () => {
+      rl.question(prompt, (answer) => {
+        const trimmed = answer.trim().toLowerCase();
+        
+        // Require explicit "y" or "yes" for confirmation
+        if (trimmed === "y" || trimmed === "yes") {
+          rl.close();
+          resolve(true);
+        } 
+        // Explicit "n" or "no" for rejection
+        else if (trimmed === "n" || trimmed === "no") {
+          rl.close();
+          resolve(false);
+        } 
+        // Invalid input - ask again
+        else {
+          console.log(`${COLORS.fgRed}Invalid input. Please enter 'y' or 'n'.${COLORS.reset}`);
+          askQuestion(); // Retry
+        }
+      });
+    };
+    
+    askQuestion();
   });
 }
 
